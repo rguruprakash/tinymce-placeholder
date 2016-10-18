@@ -16,8 +16,8 @@ tinymce.PluginManager.add('placeholder', function(editor) {
 
     editor.on('focus', onFocus);
     editor.on('blur', onBlur);
-    editor.on('change', onBlur);
-    editor.on('setContent', onBlur);
+    // editor.on('change', onBlur);
+    // editor.on('setContent', onBlur);
 
     function onFocus() {
       body.setAttribute('data-placeholder', '');
